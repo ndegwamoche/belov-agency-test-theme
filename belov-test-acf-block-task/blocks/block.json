@@ -1,21 +1,26 @@
 {
-	"name": "acf/belov",
-	"apiVersion": "2",
-    "title": "Belov",
-    "description": "This a custom block that i developed as part of my participation in the recruitment process at Belov Agency.",
+    "name": "acf/belov",
+    "apiVersion": 2,
+    "title": "Article Hero Section",
+    "description": "This is a custom block developed as part of the recruitment process at Belov Agency.",
     "category": "formatting",
     "icon": "format-gallery",
-    "keywords": ["belov"],
+    "keywords": [
+        "belov"
+    ],
     "acf": {
         "mode": "preview",
         "renderTemplate": "render.php"
     },
-    "style":[
+    "style": [
         "archivo-google-fonts",
         "lora-google-fonts",
-        "file:./styles.css"
+        "file:./style.css"
     ],
     "supports": {
-        "align": ["wide", "full"]
+        "align": [
+            "wide",
+            "full"
+        ]
     }
 }

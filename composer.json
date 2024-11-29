@@ -1,0 +1,8 @@
+{
+    "name": "moche/belov-agency-test-theme",
+    "type": "project",
+    "license": "MIT",
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*"
+    }
+}

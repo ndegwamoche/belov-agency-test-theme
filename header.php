@@ -4,13 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belov Figma</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo get_theme_file_uri('style.css'); ?>">
+    <?php wp_head(); ?>
 </head>
 
 <body>
@@ -20,7 +14,9 @@
     <header class="site-header">
         <div class="wrapper">
             <div class="logo">
-                <img src="<?php echo get_theme_file_uri('images/logo.png'); ?>" alt="Marathon Handbook">
+                <a href="<?php echo get_home_url(); ?>">
+                    <img src="<?php echo get_theme_file_uri('images/logo.png'); ?>" alt="Marathon Handbook">
+                </a>
             </div>
 
             <!-- Start of desktop navigation menu -->
