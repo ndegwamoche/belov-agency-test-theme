@@ -6,9 +6,16 @@
  * Requires at least: 6.1
  * Requires PHP:      7.0
  * Version:           0.0.1
- * Author:            Martin Ndegwa Moche
+ * Author:            Martin Ndegwa Moche <ndegwamoche@gmail.com>
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       belov-acf-block
+ * 
+ * @category Plugin
+ * @package  BelovAgencyTestACFBlock
+ * @author   Martin Ndegwa Moche <ndegwamoche@gmail.com>
+ * @license  GPL-2.0-or-later https://www.gnu.org/licenses/gpl-2.0.html
+ * @link     https://github.com/ndegwamoche/belov-test-block-theme
  */
 
 // Exit if accessed directly.
@@ -17,42 +24,42 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Registers the block using metadata from the `block.json` file.
+ * Registers the custom block using metadata from the `block.json` file.
  *
- * Automatically handles registration of all necessary assets, including scripts, styles, and editor scripts.
+ * This function handles registration of all necessary assets, including
+ * scripts, styles, and editor scripts.
  *
- * @see https://developer.wordpress.org/reference/functions/register_block_type/
+ * @return void
  */
-function belov_test_acf_block()
+function Belov_Test_Acf_block()
 {
-    // Register the block using its metadata.
     register_block_type(__DIR__ . '/blocks');
 }
-add_action('init', 'belov_test_acf_block');
+add_action('init', 'Belov_Test_Acf_block');
 
 /**
  * Registers custom styles and scripts for the block's editor and frontend display.
  *
  * This function registers two Google Fonts (Archivo and Lora) for use in the block.
  *
- * @see https://developer.wordpress.org/block-editor/developers/block-api/block-edit-save/#editor-scripts
+ * @return void
  */
-function belov_test_register_styles_and_scripts()
+function Belov_Test_Register_Styles_And_scripts()
 {
-    // Register the Archivo Google Font.
     wp_register_style(
         'archivo-google-fonts',
-        'https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap',
+        'https://fonts.googleapis.com/css2?family=Archivo:ital,
+        wght@0,100..900;1,100..900&display=swap',
         array(),
         null
     );
 
-    // Register the Lora Google Font.
     wp_register_style(
         'lora-google-fonts',
-        'https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap',
+        'https://fonts.googleapis.com/css2?family=Lora:ital,
+        wght@0,400..700;1,400..700&display=swap',
         array(),
         null
     );
 }
-add_action('admin_enqueue_scripts', 'belov_test_register_styles_and_scripts');
+add_action('admin_enqueue_scripts', 'Belov_Test_Register_Styles_And_scripts');
