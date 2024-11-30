@@ -48,16 +48,14 @@ function Belov_Test_Register_Styles_And_scripts()
 {
     wp_register_style(
         'archivo-google-fonts',
-        'https://fonts.googleapis.com/css2?family=Archivo:ital,
-        wght@0,100..900;1,100..900&display=swap',
+        'https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap',
         array(),
         null
     );
 
     wp_register_style(
         'lora-google-fonts',
-        'https://fonts.googleapis.com/css2?family=Lora:ital,
-        wght@0,400..700;1,400..700&display=swap',
+        'https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap',
         array(),
         null
     );

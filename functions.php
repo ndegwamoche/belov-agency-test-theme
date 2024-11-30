@@ -68,16 +68,14 @@ function Belov_Test_Block_Theme_scripts()
     // Google Fonts.
     wp_enqueue_style(
         'google-font-archivo-css',
-        '//fonts.googleapis.com/css2?family=Archivo:ital,
-        wght@0,100..900;1,100..900&display=swap',
+        '//fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap',
         array(),
         null
     );
 
     wp_enqueue_style(
         'google-font-lora-css',
-        '//fonts.googleapis.com/css2?family=Lora:ital,
-        wght@0,400..700;1,400..700&display=swap',
+        '//fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap',
         array(),
         null
     );
