@@ -6,6 +6,8 @@ This WordPress plugin creates a custom block for displaying a featured article a
 
 The Belov Test Task Block Plugin provides a custom block that displays a featured article with its image, title, category, author, and publication date. Below the featured article, it lists related articles using ACF’s relationship field. This plugin is designed to integrate easily with WordPress themes and offers flexibility for content display.
 
+![enter image description here](https://raw.githubusercontent.com/ndegwamoche/belov-agency-test-theme/main/belov-figma.png)
+
 ### Features:
 - Displays a featured article with its details (title, image, category, author, date).
 - Shows a list of related articles fetched using ACF’s relationship field.
