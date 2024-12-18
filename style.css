@@ -1,3 +1,12 @@
+/*!
+Theme Name: Belov Test task Theme
+Theme URI: https://github.com/ndegwamoche/
+Author: Martin Ndegwa Moche
+Author URI: https://github.com/ndegwamoche/
+Description: I developed this theme as part of my participation in the recruitment process at Belov Agency.
+Version: 1.0.0
+*/
+
 :root {
     --brown-color: rgba(217, 212, 199, 1);
     --brown-color-50-opacity: rgba(217, 212, 199, 0.5);

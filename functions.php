@@ -56,6 +56,7 @@ function Belov_Test_Block_Theme_Register_Nav_menus()
         )
     );
 }
+
 add_action('init', 'Belov_Test_Block_Theme_Register_Nav_menus');
 
 /**
